@@ -11,19 +11,16 @@ export class SidebarComponent {
   get record(){
 
     return this.gifsService.record;
-    
-
-    
+  
 
   }
 
  constructor( private gifsService : GifsService){}
 
-  
- 
+  search(gif : string){
 
-
-
+   this.gifsService.searchGifs(gif);
+  }
  }
 
   
