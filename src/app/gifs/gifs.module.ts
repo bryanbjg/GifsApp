@@ -13,12 +13,12 @@ import { ResultsComponent } from './results/results.component';
     ResultsComponent
   ],
 
-  exports:[
+  exports: [
     GifsPageComponent
   ],
   imports: [
     CommonModule
   ],
-  
+
 })
 export class GifsModule { }

@@ -4,26 +4,25 @@ import { GifsService } from 'src/app/gifs/services/gifs.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
 
-  get record(){
+  get record() {
 
     return this.gifsService.record;
-  
+
 
   }
 
- constructor( private gifsService : GifsService){}
+  constructor(private gifsService: GifsService) { }
 
-  search(gif : string){
+  search(gif: string) {
 
-   this.gifsService.searchGifs(gif);
+    this.gifsService.searchGifs(gif);
   }
- }
+}
 
-  
-  
+
+
 
 
